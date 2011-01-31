@@ -4,6 +4,7 @@ var http = require("http"),
 // languages
 var langs = {};
 langs.english = require("./langs/english");
+langs.test = require("./langs/leetspeak"); 
 
 http.createServer(function(request, response) {
 
@@ -24,6 +25,6 @@ http.createServer(function(request, response) {
 		response.end();
 	}
 
-}).listen(1234);
+}).listen(8234);
 
 console.log("Server running at http://localhost:1234/");
