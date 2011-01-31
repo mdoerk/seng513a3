@@ -4,7 +4,7 @@
 response.writeHead(200, {"Content-Type": "text/html"});
 
 // add http body
-  response.write("<html><body>\n");
+  response.write("<html> <body>\n");
 response.write("Arabic: مرحبا العالم<br>");
 response.write("<a href='./'>Back</a>\n");
 response.write("</body></html>\n");
