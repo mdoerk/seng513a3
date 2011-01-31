@@ -4,7 +4,10 @@ var http = require("http"),
 // languages
 var langs = {};
 langs.english = require("./langs/english");
-langs.test = require("./langs/leetspeak"); 
+langs.russian = require("./langs/russian");
+langs.arabic = require("./langs/arabic");
+langs.vietnamese = require("./langs/vietnamese");
+langs.danish = require("./langs/danish"); 
 
 http.createServer(function(request, response) {
 
