@@ -13,7 +13,7 @@ http.createServer(function(request, response) {
 
 	var lang = request.url.substr(1);
 
-	//	handle hello world by language, if present
+	// handle hello world by language, if present
 	if (typeof(langs[lang])!=="undefined")
 	{
 		langs[lang].handle(request, response);
@@ -28,6 +28,6 @@ http.createServer(function(request, response) {
 		response.end();
 	}
 
-}).listen(8234);
+}).listen(1234);
 
 console.log("Server running at http://localhost:1234/");
