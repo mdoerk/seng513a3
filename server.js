@@ -5,12 +5,18 @@ var http = require("http"),
 var langs = {};
 langs.english = require("./langs/english");
 langs.japanese = require("./langs/japanese");
+langs.russian = require("./langs/russian");
+langs.polish = require("./langs/polish");
+langs.arabic = require("./langs/arabic");
+langs.vietnamese = require("./langs/vietnamese");
+langs.danish = require("./langs/danish"); 
+langs.spanish = require("./langs/spanish");
 
 http.createServer(function(request, response) {
 
 	var lang = request.url.substr(1);
 
-	//	handle hello world by language, if present
+	// handle hello world by language, if present
 	if (typeof(langs[lang])!=="undefined")
 	{
 		langs[lang].handle(request, response);
