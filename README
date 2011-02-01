@@ -4,4 +4,9 @@ at the University of Calgary.
 Find more details on the tutorials page:
 http://pages.cpsc.ucalgary.ca/~sillito/seng-513/assignments.html#a3
 
+## FAQ
+
+### How to set the encoding for a language that needs different characters than those in ASCII?
+
+Make sure that you include the charset that your language file is encoded in the HTTP header _Content-Type_, which is likely to be Unicode. Read more about [charsets in HTTP at W3C](http://www.w3.org/International/O-HTTP-charset).
 
