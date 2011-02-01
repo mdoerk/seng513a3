@@ -26,8 +26,9 @@ For the bash shell you can put the following in ~/.bashrc :
 	   fi  
 	}
 
+	# add \w in front to display current directory
 	export PS1="\$(gitprompt)$ "
-
+	
 Make sure that you reference the .bashrc in your ~/.bash_profile like so:
 
 	. "$HOME/.bashrc"
