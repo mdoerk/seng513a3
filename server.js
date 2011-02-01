@@ -4,7 +4,6 @@ var http = require("http"),
 // languages
 var langs = {};
 langs.english = require("./langs/english");
-langs.japanese = require("./langs/japanese");
 langs.russian = require("./langs/russian");
 langs.polish = require("./langs/polish");
 langs.arabic = require("./langs/arabic");
