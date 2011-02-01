@@ -5,7 +5,7 @@ exports.handle = function (request, response)
 
 	// add http body
   response.write("<html><body>\n");
-	response.write("English: Hola, mundo!<br>");
+	response.write("Spanish: Hola, mundo!<br>");
 	response.write("<a href='./'>Back</a>\n");
 	response.write("</body></html>\n");
 
