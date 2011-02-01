@@ -8,14 +8,14 @@ http://pages.cpsc.ucalgary.ca/~sillito/seng-513/assignments.html#a3
 FAQ
 
 
-How to set the encoding for a language that needs different characters than those in ASCII?
+Q: How to set the encoding for a language that needs different characters than those in ASCII?
 
-Make sure that you include the charset that your language file is encoded in the HTTP header Content-Type, which is likely to be Unicode. Read more about charsets in HTTP at W3C:  http://www.w3.org/International/O-HTTP-charset
+A: Make sure that you include the charset that your language file is encoded in the HTTP header Content-Type, which is likely to be Unicode. Read more about charsets in HTTP at W3C:  http://www.w3.org/International/O-HTTP-charset
 
 
-Is there a way to know which branch one is currently in? (answer courtesy of Remy)
+Q: Is there a way to know which branch one is currently in? (answer courtesy of Remy)
 
-For the bash shell you can put the following in ~/.bashrc :
+A: For the bash shell you can put the following in ~/.bashrc :
 
 	# Function to print the git branch if we are in a git repository
 	gitprompt ()
@@ -33,3 +33,7 @@ Make sure that you reference the .bashrc in your ~/.bash_profile like so:
 
 	. "$HOME/.bashrc"
 
+
+Q: I pushed my changes - am I done?
+
+A: No, please, come to the second tutorial and show your local changes and explain your solution to the TA.
