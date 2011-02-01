@@ -11,6 +11,7 @@ langs.vietnamese = require("./langs/vietnamese");
 langs.danish = require("./langs/danish"); 
 langs.spanish = require("./langs/spanish");
 langs.japanese = require("./langs/japanese");
+langs.french = require("./langs/french");
 
 http.createServer(function(request, response) {
 
