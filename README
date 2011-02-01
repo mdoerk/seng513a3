@@ -7,7 +7,28 @@ http://pages.cpsc.ucalgary.ca/~sillito/seng-513/assignments.html#a3
 
 FAQ
 
+
 How to set the encoding for a language that needs different characters than those in ASCII?
 
-Make sure that you include the charset that your language file is encoded in the HTTP header _Content-Type_, which is likely to be Unicode. Read more about charsets in HTTP at W3C:  http://www.w3.org/International/O-HTTP-charset
+Make sure that you include the charset that your language file is encoded in the HTTP header Content-Type, which is likely to be Unicode. Read more about charsets in HTTP at W3C:  http://www.w3.org/International/O-HTTP-charset
+
+
+Is there a way to know which branch one is currently in? (answer courtesy of Remy)
+
+For the bash shell you can put the following in ~/.bashrc :
+
+	# Function to print the git branch if we are in a git repository
+	gitprompt ()
+	{
+	   if [ -d .git ]; then
+	       branch=`git branch | grep "*" | sed 's/\* //'`
+	       echo "[$branch]"
+	   fi  
+	}
+
+	export PS1="\$(gitprompt)$ "
+
+Make sure that you reference the .bashrc in your ~/.bash_profile like so:
+
+	. "$HOME/.bashrc"
 
