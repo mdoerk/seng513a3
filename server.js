@@ -5,6 +5,7 @@ var http = require("http"),
 var langs = {};
 langs.english = require("./langs/english");
 langs.russian = require("./langs/russian");
+langs.portuguese = require("./langs/portuguese");
 
 http.createServer(function(request, response) {
 
