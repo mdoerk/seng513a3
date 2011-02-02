@@ -10,5 +10,5 @@ exports.handle = function (request, response)
 	response.write("</body></html>\n");
 	
 	// send http response off
-  response.end();
+  response.end();  
 };
