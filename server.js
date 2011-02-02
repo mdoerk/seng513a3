@@ -21,6 +21,7 @@ langs.korean = require("./langs/korean");
 langs.klingon = require("./langs/klingon");
 langs.hindi = require("./langs/hindi");
 langs.bulgarian = require("./langs/bulgarian");
+langs.mandarin = require("./langs/mandarin");
  
 
 http.createServer(function(request, response) {
