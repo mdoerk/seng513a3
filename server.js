@@ -17,6 +17,8 @@ langs.swedish = require("./langs/swedish");
 langs.quenya = require("./langs/quenya");
 langs.serbian = require("./langs/serbian");
 langs.korean = require("./langs/korean");
+langs.serbian = require("./langs/serbian");
+langs.korean = require("./langs/korean");
 
 http.createServer(function(request, response) {
 
