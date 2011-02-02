@@ -1,10 +1,11 @@
-var http = require("http"),
+﻿var http = require("http"),
 		fs = require("fs");
 
 // languages
 var langs = {};
 langs.english = require("./langs/english");
 langs.russian = require("./langs/russian");
+langs.portuguese = require("./langs/portuguese");
 langs.polish = require("./langs/polish");
 langs.arabic = require("./langs/arabic");
 langs.vietnamese = require("./langs/vietnamese");
@@ -19,7 +20,9 @@ langs.serbian = require("./langs/serbian");
 langs.korean = require("./langs/korean");
 langs.klingon = require("./langs/klingon");
 langs.hindi = require("./langs/hindi");
+langs.bulgarian = require("./langs/bulgarian");
  
+
 http.createServer(function(request, response) {
 
 	var lang = request.url.substr(1);
