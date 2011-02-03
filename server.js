@@ -13,6 +13,18 @@ langs.spanish = require("./langs/spanish");
 langs.japanese = require("./langs/japanese");
 langs.french = require("./langs/french");
 langs.croatian = require("./langs/croatian");
+langs.german = require("./langs/german");
+langs.swedish = require("./langs/swedish");
+langs.romanian = require("./langs/romanian");
+langs.quenya = require("./langs/quenya");
+langs.serbian = require("./langs/serbian");
+langs.korean = require("./langs/korean");
+langs.klingon = require("./langs/klingon");
+langs.hindi = require("./langs/hindi");
+langs.italian = require("./langs/italian");
+langs.bulgarian = require("./langs/bulgarian");
+langs.mandarin = require("./langs/mandarin");
+
 
 http.createServer(function(request, response) {
 
