@@ -2,13 +2,13 @@ exports.handle = function (request, response)
 {
 	// prepare http head
 	response.writeHead(200, {"Content-Type": "text/html"});
-
+	
 	// add http body
-  response.write("<html><body>\n");
-	response.write("Romanian: Lumea Buna<br>");
+    response.write("<html><body>\n");
+	response.write("Klingon: NuqneH Qo' <br>");
 	response.write("<a href='./'>Back</a>\n");
 	response.write("</body></html>\n");
-
+	
 	// send http response off
-  response.end();
+	response.end();
 };
