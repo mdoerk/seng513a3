@@ -15,6 +15,7 @@ langs.japanese = require("./langs/japanese");
 langs.french = require("./langs/french");
 langs.german = require("./langs/german");
 langs.swedish = require("./langs/swedish");
+langs.romanian = require("./langs/romanian");
 langs.quenya = require("./langs/quenya");
 langs.serbian = require("./langs/serbian");
 langs.korean = require("./langs/korean");
@@ -24,6 +25,7 @@ langs.italian = require("./langs/italian");
 langs.bulgarian = require("./langs/bulgarian");
 langs.mandarin = require("./langs/mandarin");
  
+
 
 http.createServer(function(request, response) {
 
@@ -46,4 +48,4 @@ http.createServer(function(request, response) {
 
 }).listen(1234);
 
-//console.log("Server running at http://localhost:1234/");
+console.log("Server running at http://localhost:1234/");
