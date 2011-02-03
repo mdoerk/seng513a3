@@ -1,7 +1,7 @@
 ﻿exports.handle = function(request, response)
 {
     // prepare http head
-    response.writeHead(200, {"Content-Type": "text/html"});
+    response.writeHead(200, {"Content-Type": "text/html; charset=UTF-8"});
 
     // add http body
     response.write("<html><body>\n");
