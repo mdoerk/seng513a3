@@ -1,10 +1,11 @@
-var http = require("http"),
+﻿var http = require("http"),
 		fs = require("fs");
 
 // languages
 var langs = {};
 langs.english = require("./langs/english");
 langs.russian = require("./langs/russian");
+langs.portuguese = require("./langs/portuguese");
 langs.polish = require("./langs/polish");
 langs.arabic = require("./langs/arabic");
 langs.vietnamese = require("./langs/vietnamese");
@@ -20,7 +21,10 @@ langs.korean = require("./langs/korean");
 langs.klingon = require("./langs/klingon");
 langs.hindi = require("./langs/hindi");
 langs.italian = require("./langs/italian");
+langs.bulgarian = require("./langs/bulgarian");
+langs.mandarin = require("./langs/mandarin");
  
+
 http.createServer(function(request, response) {
 
 	var lang = request.url.substr(1);
@@ -42,4 +46,4 @@ http.createServer(function(request, response) {
 
 }).listen(1234);
 
-console.log("Server running at http://localhost:1234/");
+//console.log("Server running at http://localhost:1234/");
