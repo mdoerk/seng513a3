@@ -4,8 +4,8 @@ exports.handle = function (request, response)
 	response.writeHead(200, {"Content-Type": "text/html"});
 
 	// add http body
-  response.write("<html><body>\n");
-	response.write("Cantonese: Pozdrav svijetu<br>");
+    response.write("<html><body>\n");
+	response.write("Croatian: Pozdrav svijetu<br>");
 	response.write("<a href='./'>Back</a>\n");
 	response.write("</body></html>\n");
 
