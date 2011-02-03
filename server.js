@@ -3,6 +3,7 @@
 
 // languages
 var langs = {};
+langs.australian = require("./langs/australian");
 langs.english = require("./langs/english");
 langs.russian = require("./langs/russian");
 langs.portuguese = require("./langs/portuguese");
