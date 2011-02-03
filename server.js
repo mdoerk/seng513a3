@@ -45,4 +45,4 @@ http.createServer(function(request, response) {
 
 }).listen(1234);
 
-//console.log("Server running at http://localhost:1234/");
+console.log("Server running at http://localhost:1234/");
